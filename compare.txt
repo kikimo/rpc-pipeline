@@ -1,0 +1,11 @@
+pipeline:
+
+real    0m3.731s
+user    0m2.295s
+sys     0m9.663s
+
+sync:
+real    0m13.832s
+user    0m3.450s
+sys     0m10.522s
+
