@@ -16,9 +16,18 @@ limitations under the License.
 package main
 
 import (
+	"math/rand"
+	"time"
+
+	"github.com/golang/glog"
 	"github.com/kikimo/rpc-pipeline/cmd"
 )
 
 func main() {
-  cmd.Execute()
+	rand.Seed(time.Now().UnixNano())
+
+	// flag.Parse()
+	defer glog.Flush()
+
+	cmd.Execute()
 }
